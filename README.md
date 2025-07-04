@@ -12,7 +12,9 @@ Author : Muhammad Ar Rafii Milnandy Abrar
 
 ## Features
 
+- Header with navigation bar
 - Home Section
 - About Me Section
 - Projects Section
 - Contact Section
+- Footer
