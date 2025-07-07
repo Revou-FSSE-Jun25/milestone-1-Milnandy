@@ -18,15 +18,18 @@
             <!-- NavBar -->
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <hr/>
     </header>
     <main>
         <!-- Home Section -->
         <section id="home">
+            <h2>Home</h2>
+            <hr/>
             
             <!-- Explanation On the Left Side-->
             <div>
@@ -43,7 +46,7 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="aboutMe">
+        <section id="about-me">
             
             <!-- About Me -->
             <div>
@@ -51,7 +54,7 @@
                 <!-- left side -->
                 <div>
                     <!-- Need Sizing -->
-                    <img src="images\photoProfile.jpg" alt="Milnandy's Photo"/>
+                    <img src="images/photoProfile4X6.jpg" alt="Milnandy's Photo"/>
                 </div>
 
                 <!-- right side -->
@@ -59,12 +62,13 @@
                     <p>
                         I am a Fresh graduate with a major in <strong>Physics</strong> from <strong>Syarif Hidayatullah State Islamic University Jakarta</strong>.
                         I have passion for learning to master science in the field of <strong>technology</strong> and currently learning
-                        <strong>Full-Stack Software Engineer</strong>. I am mastering the basics of <strong>HTML</strong>, <storng>CSS</storng>, and <strong>JavaScript</strong>. 
+                        <strong>Full-Stack Software Engineer</strong>. I am mastering the basics of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
                         I have built responsive websites and actively participated in the RevoU bootcamp. I Have good teamwork 
                         collaboration skills and can work independently, learn quickly, and possess a strong work ethic. 
                         I am currently focused on building a career in <strong>Software Engineering</strong>.
                     </p>
                 </div>
+                <hr/>
             </div>
 
             <!-- Professional Experience (job/intern) -->
@@ -74,10 +78,13 @@
 
             <!-- Education -->
             <div>
+                <h2>Education</h2>
+                <hr/>
+
                 <!-- left side -->
                 <div>
                     <h3>RevoU</h3>
-                    <date></date>
+                    <p>01-Jan-2026</p>
                     <p>Full-Stack Software Engineering</p>
                     <p>GPA: </p>
                 </div>
@@ -85,16 +92,18 @@
                 <!-- right side -->
                  <div>
                     <h3>Syarif Hidayatullah State Islamic University Jakarta</h3>
-                    <date></date>
+                    <p>30-Jan-2025</p>
                     <p>Physics</p>
                     <p>GPA: 3.53/4.00</p>
                  </div>
             </div>
+            <hr/>
         </section>
 
         <!-- Project Section -->
         <section id="project">
-            <h3>My Projects</h3>
+            <h2>My Projects</h2>
+            <hr/>
 
             <!-- Project Categories -->
             <div>
@@ -116,11 +125,14 @@
                 <!-- right side -->
                  <div></div>
             </div>
+            <hr/>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            
+            <h2>Contact</h2>
+            <hr/>
+
             <!-- left side -->
             <div>
                 <!-- some cool feature -->
@@ -128,20 +140,31 @@
 
             <!-- right side -->
             <div>
-                <form action="sent.html" method="POST">
-                    <h3>Contact</h3>
+                <form action="pages/sent.html" method="POST">
                     <br><br><br>
 
-                    <input type="text" id="name" name="name" placeholder="Your name" required><br>
-                    <input type="email" id="email" name="email" placeholder="Your email" required><br>
+                    <label for="form-name">Name: </label>
+                    <input type="text" id="form-name" name="form-name" placeholder="Your name" required><br>
+
+                    <label for="form-email">Email: </label>
+                    <input type="email" id="form-email" name="form-email" placeholder="Your email" required><br>
+
+                    <label for="form-subject">Subject: </label>
                     <input type="subject" id="subject" name="subject" placeholder="Subject" required><br>
-                    <textarea id="textarea" name="textarea" cols="20" rows="5" placeholder="Your Message"></textarea>
+
+                    <label for="form-message">Message: </label>
+                    <textarea id="form-message" name="form-message" cols="20" rows="5" placeholder="Your Message"></textarea><br>
+
+                    <input type="reset">
+                    <input type="submit">
                 </form>
             </div>
+            <hr/>
         </section>
     </main>
     <footer>
-        <h1>Get In Touch</h1>
+        <h2>Get In Touch</h2>
+        <hr/>
         <p>Feel free to contact me if you have any question or just want to say hi</p>
         
         <!-- Logo's email, github, instagram, linkedin, discord-->
