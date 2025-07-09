@@ -1,5 +1,76 @@
+:root {
+  --celadon: #A9E5BB;
+  --vanilla: #FCF6B1;
+  --xanthous: #F7B32B;
+  --red: #F72C25;
+  --darkpurple: #2D1E2F;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: var(--vanilla);
+    color: var(--darkpurple);
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--celadon);
+    color: var(--xanthous);
+    padding: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5rem;
+}
+.logo{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navbar-items{
+    flex-grow: 2;
+}
+#menu-icon{
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.navbar-items ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 0;
+    align-items: center;
+}
+.navbar-items ul li a,
+#menu-icon{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-items ul li a:hover,
+#menu-icon:hover{
+    color: var(--red);
+}
+.navbar-items ul li a:active,
+#menu-icon:active{
+    color: var(--darkpurple);
 }
