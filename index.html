@@ -5,40 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
     <title>Milnandy Portofolio</title>
+
+    <!-- box icon -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <!-- Contain Logo, NavBar, Hamburger? -->
     <header>
-        <nav>
+        <nav class="navbar">
 
             <!-- logo -->
-            <span>Milnandy</span>
+            <span class="logo">Milnandy.</span>
 
             <!-- NavBar -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="navbar-items">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="bx bx-menu-wider" id="menu-icon"></div>
+                </ul>
+            </div>
         </nav>
-        <hr/>
     </header>
     <main>
         <!-- Home Section -->
         <section id="home">
             <h2>Home</h2>
-            <hr/>
             
             <!-- Explanation On the Left Side-->
-            <div>
+            <div class="home-content">
                 <h1>Hi, I'm Milnandy Abrar</h1>
-                <h3><strong>Full Stack Software Engineer</strong></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt fuga tenetur eligendi atque sapiente blanditiis praesentium saepe quasi voluptatum aperiam expedita harum exercitationem inventore quaerat placeat, aliquid dolor perspiciatis?</p>
+                <div class="home-text-animate">
+                    <h3><strong>Full Stack Software Engineer</strong></h3>
+                </div>
+                <p>I am a <strong>Full Stack Software Engineer</strong> from Indonesia, I have a strong understanding of programming languages and have experience in Web Developer projects.</p>
             </div>
 
-            <div>
+            <div class="home-button">
                 <button>
                     <a href="assets\Milnandy_Resume.pdf" download="Milnandy_Resume">Resume PDF</a>
                 </button>
@@ -50,13 +56,11 @@
                 <!-- Doubting, should i use photo profile / logo? -->
                 <!-- <img src="images\photoProfile.jpg" alt="Milnandy's Photo"/> -->
             </div>
-            <hr/>
         </section>
 
         <!-- About Me Section -->
         <section id="about-me">
             <h2>About Me</h2>
-            <hr/>
             
             <!-- About Me -->
             <div>
@@ -78,7 +82,6 @@
                         I am currently focused on building a career in <strong>Software Engineering</strong>.
                     </p>
                 </div>
-                <hr/>
             </div>
 
             <!-- Professional Experience (job/intern) -->
@@ -89,7 +92,6 @@
             <!-- Education -->
             <div>
                 <h2>Education</h2>
-                <hr/>
 
                 <!-- left side -->
                 <div>
@@ -107,13 +109,11 @@
                     <p>GPA: 3.53/4.00</p>
                  </div>
             </div>
-            <hr/>
         </section>
 
         <!-- Project Section -->
         <section id="project">
             <h2>My Projects</h2>
-            <hr/>
 
             <!-- Project Categories -->
             <div>
@@ -135,13 +135,11 @@
                 <!-- right side -->
                  <div></div>
             </div>
-            <hr/>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <hr/>
 
             <!-- left side -->
             <div>
@@ -151,30 +149,29 @@
             <!-- right side -->
             <div>
                 <form action="pages\submit\submit.html" method="get">
-                    <br><br><br>
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="form-name">Name: </label>
+                        <input type="text" id="form-name" name="form-name" placeholder="Your name" required><br>
 
-                    <label for="form-name">Name: </label>
-                    <input type="text" id="form-name" name="form-name" placeholder="Your name" required><br>
+                        <label for="form-email">Email: </label>
+                        <input type="email" id="form-email" name="form-email" placeholder="Your email" required><br>
 
-                    <label for="form-email">Email: </label>
-                    <input type="email" id="form-email" name="form-email" placeholder="Your email" required><br>
+                        <label for="form-subject">Subject: </label>
+                        <input type="subject" id="subject" name="subject" placeholder="Subject" required><br>
 
-                    <label for="form-subject">Subject: </label>
-                    <input type="subject" id="subject" name="subject" placeholder="Subject" required><br>
+                        <label for="form-message">Message: </label>
+                        <textarea id="form-message" name="form-message" cols="20" rows="5" placeholder="Your Message"></textarea><br>
 
-                    <label for="form-message">Message: </label>
-                    <textarea id="form-message" name="form-message" cols="20" rows="5" placeholder="Your Message"></textarea><br>
-
-                    <input type="reset">
-                    <input type="submit">
+                        <input type="reset">
+                        <input type="submit">
+                    </fieldset>
                 </form>
             </div>
-            <hr/>
         </section>
     </main>
     <footer>
         <h2>Get In Touch</h2>
-        <hr/>
         <p>Feel free to contact me if you have any question or just want to say hi</p>
         
         <!-- Logo's email, github, instagram, linkedin, discord-->
