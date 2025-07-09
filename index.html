@@ -8,6 +8,8 @@
 
     <!-- box icon -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -33,23 +35,22 @@
     <main>
         <!-- Home Section -->
         <section id="home">
-            <h2>Home</h2>
             
             <!-- Explanation On the Left Side-->
             <div class="home-content">
+
                 <h1>Hi, I'm Milnandy Abrar</h1>
                 <div class="home-text-animate">
                     <h3><strong>Full Stack Software Engineer</strong></h3>
                 </div>
                 <p>I am a <strong>Full Stack Software Engineer</strong> from Indonesia, I have a strong understanding of programming languages and have experience in Web Developer projects.</p>
-            </div>
-
-            <div class="home-button">
-                <button>
-                    <a href="assets\Milnandy_Resume.pdf" download="Milnandy_Resume">Resume PDF</a>
-                </button>
-            </div>
             
+                <div class="home-button">
+                    <button>
+                        <a href="assets\Milnandy_Resume.pdf" download="Milnandy_Resume">Resume PDF</a>
+                    </button>
+                </div>
+            </div>
             
             <!-- My Profile Picture On the Right Side-->
             <div>
@@ -60,40 +61,37 @@
 
         <!-- About Me Section -->
         <section id="about-me">
-            <h2>About Me</h2>
-            
-            <!-- About Me -->
-            <div>
-                
-                <!-- left side -->
-                <div>
-                    <!-- Need Sizing -->
-                    <img src="images/photoProfile4X6.jpg" alt="Milnandy's Photo"/>
-                </div>
-
-                <!-- right side -->
-                <div>
-                    <p>
-                        I am a Fresh graduate with a major in <strong>Physics</strong> from <strong>Syarif Hidayatullah State Islamic University Jakarta</strong>.
-                        I have passion for learning to master science in the field of <strong>technology</strong> and currently learning
-                        <strong>Full-Stack Software Engineer</strong>. I am mastering the basics of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
-                        I have built responsive websites and actively participated in the RevoU bootcamp. I Have good teamwork 
-                        collaboration skills and can work independently, learn quickly, and possess a strong work ethic. 
-                        I am currently focused on building a career in <strong>Software Engineering</strong>.
-                    </p>
-                </div>
+    
+            <!-- left side -->
+            <div class="about-me-left">
+                <!-- Need Sizing -->
+                <img src="images/photoProfile4X6.jpg" alt="Milnandy's Photo"/>
             </div>
 
-            <!-- Professional Experience (job/intern) -->
+            <!-- right side -->
+            <div class="about-me-right">
+                <p>
+                    I am a Fresh graduate with a major in <strong>Physics</strong> from <strong>Syarif Hidayatullah State Islamic University Jakarta</strong>.
+                    I have passion for learning to master science in the field of <strong>technology</strong> and currently learning
+                    <strong>Full-Stack Software Engineer</strong>. I am mastering the basics of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+                    I have built responsive websites and actively participated in the RevoU bootcamp. I Have good teamwork 
+                    collaboration skills and can work independently, learn quickly, and possess a strong work ethic. 
+                    I am currently focused on building a career in <strong>Software Engineering</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- <section id="education">
+            Professional Experience (job/intern)
             <div>
-                <!-- straight line with dots(job) separating left and right -->
+                straight line with dots(job) separating left and right
             </div>
 
-            <!-- Education -->
+            Education
             <div>
                 <h2>Education</h2>
 
-                <!-- left side -->
+                left side
                 <div>
                     <h3>RevoU</h3>
                     <p>01-Jan-2026</p>
@@ -101,7 +99,7 @@
                     <p>GPA: </p>
                 </div>
 
-                <!-- right side -->
+                right side
                  <div>
                     <h3>Syarif Hidayatullah State Islamic University Jakarta</h3>
                     <p>30-Jan-2025</p>
@@ -109,8 +107,8 @@
                     <p>GPA: 3.53/4.00</p>
                  </div>
             </div>
-        </section>
-
+        </section> -->
+            
         <!-- Project Section -->
         <section id="project">
             <h2>My Projects</h2>
@@ -174,9 +172,14 @@
         <h2>Get In Touch</h2>
         <p>Feel free to contact me if you have any question or just want to say hi</p>
         
-        <!-- Logo's email, github, instagram, linkedin, discord-->
-        <div>
-            <span></span>
+        <!-- Logo's email, github, instagram, linkedin-->
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+                <li><a href=""><i class='bx bxl-github' ></i></a></li>
+                <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href=""><i class='bx bxl-linkedin-square' ></i></a></li>
+            </ul>
         </div>
     </footer>
 </body>
