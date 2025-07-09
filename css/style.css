@@ -1,9 +1,9 @@
 :root {
-  --celadon: #A9E5BB;
-  --vanilla: #FCF6B1;
-  --xanthous: #F7B32B;
-  --red: #F72C25;
-  --darkpurple: #2D1E2F;
+  --teagreen: #CCD5AE;
+  --beige: #E9EDC9;
+  --cornsilk: #FEFAE0;
+  --papayawhip: #FAEDCD;
+  --buff: #D4A373;
 }
 body{
     margin: 0;
@@ -13,19 +13,22 @@ body{
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    background-color: var(--vanilla);
-    color: var(--darkpurple);
+    background-color: var(--cornsilk);
+    color: var(--buff);
     font-family: sans-serif;
 }
+
+/* header */
 header{
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--celadon);
-    color: var(--xanthous);
+    background-color: var(--teagreen);
+    color: var(--buff);
     padding: 1rem;
+    max-height: 20vh;
 }
 .navbar{
     display: flex;
@@ -68,9 +71,89 @@ header{
 }
 .navbar-items ul li a:hover,
 #menu-icon:hover{
-    color: var(--red);
+    color: var(--papayawhip);
 }
 .navbar-items ul li a:active,
 #menu-icon:active{
-    color: var(--darkpurple);
+    color: var(--cornsilk);
+}
+
+/* home section */
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+.home-content{
+    max-width: 30rem;
+}
+.home-content h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin: 0;
+}
+.home-text-animate{
+    position: relative;
+}
+.home-text-animate h3{
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--buff);
+}
+.home-content p{
+    margin: 1rem 0 1.5rem;
+}
+.home-content p strong{
+    font-weight: normal;
+}
+.home-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.home-button button{
+    background: var(--papayawhip);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.home-button button a{
+    text-decoration: none;
+    color: var(--buff);
+    transition: 0.3s;
+}
+.home-button button:hover{
+    background: var(--teagreen);
+}
+.home-button button a:hover{
+    color: var(--beige);
+}
+
+/* about me section */
+#about-me{
+    min-width: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-me-left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-left img{
+    max-height: 80vh;
+}
+.about-me-right{
+    width: 50%;
+}
+.about-me-right p{
+    margin: 0;
+}
+.about-me-right p strong{
+    font-weight: normal;
 }
