@@ -316,6 +316,8 @@ footer{
     align-items: center;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
     margin-top: -0.8rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 footer h2, #footer-text{
     margin: 1rem;
