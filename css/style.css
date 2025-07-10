@@ -18,10 +18,13 @@ html, body{
     background-color: var(--cornsilk);
     color: var(--buff);
     font-family: sans-serif;
+    scroll-snap-type: y mandatory;
 }
 
 section{
     min-height: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 /* header */
 header{
@@ -306,6 +309,7 @@ footer{
     flex-direction: column;
     align-items: center;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
+    margin-top: -0.8rem;
 }
 footer h2, #footer-text{
     margin: 1rem;

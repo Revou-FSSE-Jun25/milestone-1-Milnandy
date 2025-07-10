@@ -4,6 +4,8 @@
 3. Author, Creator, Contributor
 4. Preview project, link
 5. Features -->
+
+
 # **Milnandy Portofolio**
 
 Display Portofolio Created for Milestone 1 Module 1 (only using HTML)
@@ -12,7 +14,7 @@ Author : Muhammad Ar Rafii Milnandy Abrar
 
 ## Features
 
-- Header with navigation bar
+- Header (navigation bar)
 - Home Section
 - About Me Section
 - Projects Section
