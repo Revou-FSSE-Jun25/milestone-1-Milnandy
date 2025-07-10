@@ -8,6 +8,8 @@
 
 html, body{
     height: 100%;
+html, body{
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -149,6 +151,8 @@ header{
     justify-content: space-between;
     padding-top: 30px;
     background: var(--beige);
+    padding-top: 30px;
+    background: var(--beige);
 }
 .about-me-left{
     display: flex;
@@ -196,8 +200,12 @@ header{
     border: 0.1rem solid var(--buff);
     color: var(--buff);
     cursor: pointer;
+    cursor: pointer;
 }
 .project-head div button:hover{
+    background: var(--beige);
+    border: 0.1rem solid var(--teagreen);
+    color: var(--teagreen);
     background: var(--beige);
     border: 0.1rem solid var(--teagreen);
     color: var(--teagreen);
