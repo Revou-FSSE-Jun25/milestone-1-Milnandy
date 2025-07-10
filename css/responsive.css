@@ -84,6 +84,9 @@
     .project-head div button{
         padding: 0.5rem;
     }
+    .project-list{
+        margin-top: 0.5rem;
+    }
     .project-left,
     .project-middle,
     .project-right{

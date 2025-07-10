@@ -4,15 +4,21 @@
 3. Author, Creator, Contributor
 4. Preview project, link
 5. Features -->
+![Preview-Dekstop](images/preview-dekstop.jpg)
+
+![Preview-768px](images/preview-768px.jpg)
+
+![Preview-480px](images/preview-480px.jpg)
+
 # **Milnandy Portofolio**
 
-Display Portofolio Created for Milestone 1 Module 1 (only using HTML)
+Display Portofolio Created for Milestone 1 Module 1 (only using HTML) + CSS
 
 Author : Muhammad Ar Rafii Milnandy Abrar
 
 ## Features
 
-- Header with navigation bar
+- Header (navigation bar)
 - Home Section
 - About Me Section
 - Projects Section
