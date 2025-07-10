@@ -222,6 +222,7 @@ header{
     width: 45vh;
     height: 30vh;
     background: var(--beige);
+
     justify-self: center;
     margin: 1rem 1rem 1rem 1rem;
     border-radius: 0.8rem;
