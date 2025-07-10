@@ -177,15 +177,15 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact</h2>
 
             <!-- left side -->
-            <div>
+            <div class="contact-left">
                 <!-- some cool feature -->
             </div>
 
             <!-- right side -->
-            <div>
+            <div class="contact-right">
+                <h2>Contact</h2>
                 <form action="pages\submit\submit.html" method="get">
                     <fieldset>
                         <legend>Contact Form</legend>
@@ -201,8 +201,10 @@
                         <label for="form-message">Message: </label>
                         <textarea id="form-message" name="form-message" cols="20" rows="5" placeholder="Your Message"></textarea><br>
 
-                        <input type="reset">
-                        <input type="submit">
+                        <div id="contact-button">
+                            <input type="reset">
+                            <input type="submit">       
+                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -210,17 +212,18 @@
     </main>
     <footer>
         <h2>Get In Touch</h2>
-        <p>Feel free to contact me if you have any question or just want to say hi</p>
+        <p id="footer-text">Feel free to contact me if you have any question or just want to say hi</p>
         
         <!-- Logo's email, github, instagram, linkedin-->
         <div class="social-media">
             <ul>
-                <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
-                <li><a href=""><i class='bx bxl-github' ></i></a></li>
-                <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
-                <li><a href=""><i class='bx bxl-linkedin-square' ></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkJlvpvnztDdVmkGQCsnpVkCwmbZNQlfBPhxTcHFlgZMhsWCWXNhBdMftDfFFhnFZxVbh"><i class='bx bxl-gmail' style='color:#d4a373'></i></a></li>
+                <li><a href="https://github.com/Milnandy"><i class='bx bxl-github' style='color:#d4a373'></i></a></li>
+                <li><a href="https://www.instagram.com/milnan_a"><i class='bx bxl-instagram' style='color:#d4a373'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/milnandy-abrar/"><i class='bx bxl-linkedin-square' style='color:#d4a373'></i></a></li>
             </ul>
         </div>
+        <p id="copyright">&copy; 2025 Milnandy. All rights reserved.</p>
     </footer>
 </body>
 </html>
