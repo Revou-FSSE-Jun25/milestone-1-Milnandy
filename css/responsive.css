@@ -1,0 +1,108 @@
+:root {
+  --teagreen: #CCD5AE;
+  --beige: #E9EDC9;
+  --cornsilk: #FEFAE0;
+  --papayawhip: #FAEDCD;
+  --buff: #D4A373;
+}
+
+@media (max-width: 768px){
+
+    /* project-section */
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+        gap: 2rem;
+        align-items: center;
+    }
+    .project-list .project-middle,
+    .project-list .project-right{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+}
+
+@media (max-width: 480px){
+
+    /* header */
+    .navbar-items ul{
+        flex-direction: column;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 2rem;
+        margin: 0;
+        align-items: center;
+    }
+    .navbar-items ul li{
+        display: none
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    /* aboutme section */
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 30px;
+        background: var(--beige);
+        align-items: center;
+    }
+    .about-me-left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+    .about-me-right{
+        display: flex;
+        width: 100%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* project section */
+    .project-head h2{
+        margin: 0.5rem;
+    }
+    .project-head div{
+        width: 100%;
+    }
+    .project-head div button{
+        padding: 0.5rem;
+    }
+    .project-left,
+    .project-middle,
+    .project-right{
+        min-height: 100vh;
+    }
+    .project-list .project-middle,
+    .project-list .project-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+
+    /* contact section */
+    .contact-right h2{
+        margin: 0.5rem;
+    }
+    .contact-right form fieldset label{
+        margin: 0;
+    }
+}
