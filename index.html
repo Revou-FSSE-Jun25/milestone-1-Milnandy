@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="./src/output.css"/>
+    <!-- <link rel="stylesheet" href=""/> -->
     <title>Milnandy Portofolio</title>
 
     <!-- box icon -->
@@ -34,23 +34,30 @@
         </nav>
     </header>
     <main>
-        <!-- Home Section -->
-        <section id="home">
+        <!-- Home / Hero Section -->
+        <section id="home" class="pt-36">
             
-            <!-- Explanation On the Left Side-->
-            <div class="home-content">
+            <div class="flex flex-wrap">
 
-                <h1>Hi, I'm Milnandy Abrar</h1>
-                <div class="home-text-animate">
-                    <h3><strong>Full Stack Software Engineer</strong></h3>
+                <!-- Home Section On the Left Side-->
+                <div class="w-full self-center px-4">
+                    <h1 class="text-base font-semibold text-primary">
+                        <!-- windows + . for emoji -->
+                        Welcome & Hi 👋, I'm <span class="block font-bold text-4xl text-black">Milnandy Abrar</span></h1>
+                    <div class="font-medium text-2xl text-slate-400 mb-10">
+                        <h2><strong>Full Stack <span class="text-black">Software Engineer</span></strong></h2>
+                    </div>
+                    <p class="text-base text-slate-400 ">I am a <strong class="font-normal">Full Stack Software Engineer</strong> from Indonesia, I have a strong understanding of programming languages and have experience in Web Developer projects.</p>
+                    <div class="flex flex-row gap-5 mt-6">
+                        <button class="text-base text-white bg-primary hover:opacity-80 px-4 py-2 rounded-full transition duration-300 ease-in-out">
+                            <a href="#contact">Contact Me</a>
+                        </button>
+                        <button class="text-base text-white bg-primary hover:opacity-80 px-4 py-2 rounded-full transition duration-300 ease-in-out">
+                            <a href="assets\Milnandy_Resume.pdf" download="Milnandy_Resume">My Resume</a>
+                        </button>
+                    </div>
                 </div>
-                <p>I am a <strong>Full Stack Software Engineer</strong> from Indonesia, I have a strong understanding of programming languages and have experience in Web Developer projects.</p>
-            
-                <div class="home-button">
-                    <button>
-                        <a href="assets\Milnandy_Resume.pdf" download="Milnandy_Resume">Resume PDF</a>
-                    </button>
-                </div>
+                
             </div>
             
             <!-- My Profile Picture On the Right Side-->
