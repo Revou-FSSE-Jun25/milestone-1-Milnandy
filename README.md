@@ -30,6 +30,7 @@ This project is a simple yet elegant personal landing page that serves as an onl
 - **CSS3** — for layout, animation, and responsiveness
 - **Boxicons** — for consistent icon design
 - **Netlify** — for easy deployment and live hosting
+- **Tailwind4** - utility-first CSS framework for styling and responsiveness
 
 ## Link Page
 A clean and responsive personal landing page built with **pure HTML and CSS** — showcasing my profile, projects, and contact info.  
