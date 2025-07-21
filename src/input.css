@@ -1,50 +1,27 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* --color-primary: oklch(70.4% 0.14 182.503); */
-.text-primary {
-    color: var(--color-teal-500); /* Menggunakan warna teal */
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-/* .hamburger-line{
-    @apply block w-6 h-0.5 bg-current my-1 transition-all duration-300 ease-in-out;
-} */
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-white/50 backdrop-blur-xs;
+  backdrop-filter: blur(10px);
+}
+
+/* hamburger menu */
 .hamburger-line {
-    display: block;
-    width: calc(var(--spacing) * 6) /* 1.5rem = 24px */;
-    height: calc(var(--spacing) * 0.5) /* 0.125rem = 2px */;
-    background-color: currentColor; /* bg-current */
-    margin-block: calc(var(--spacing) * 1) /* 0.25rem = 4px */;
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function) /* cubic-bezier(0.4, 0, 0.2, 1) */);
-    transition-duration: var(--tw-duration, var(--default-transition-duration) /* 150ms */);
+  @apply w-[30px] h-[2px] bg-black my-2 block transition-all duration-300 ease-in-out;
 }
-
-
 .hamburger-active > span:nth-child(1) {
-    --tw-translate-y: calc(var(--spacing) * 1.5) /* 0.375rem = 6px */;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-    rotate: 45deg;
+  @apply origin-top-left rotate-45;
 }
 .hamburger-active > span:nth-child(2) {
-    opacity: 0%;
+  @apply opacity-0;
 }
 .hamburger-active > span:nth-child(3) {
-    --tw-translate-y: calc(var(--spacing) * -1.5) /* -0.375rem = -6px */;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-    rotate: calc(45deg * -1) /* -45deg */;
+  @apply origin-bottom-left -rotate-45;
 }
-/* .navbar-fixed{
-    @apply fixed z-50 bg-white-opacity-90 backdrop-blur-lg w-full top-0 left-0;
-    backdrop-filter: blur(10px);
-} */
-.navbar-fixed {
-    position: fixed;
-    z-index: 50;
-    /* Untuk bg-white-opacity-90, kita definisikan warnanya langsung */
-    background-color: var(--color-white) /* #fff = #ffffff */;
-    opacity: 80%;
-    width: 100%; /* 100% */
-    top: calc(var(--spacing) * 0) /* 0rem = 0px */;
-    left: calc(var(--spacing) * 0) /* 0rem = 0px */;
-    backdrop-filter: blur(var(--blur-lg));
-}
+/* hamburger menu */
