@@ -7,8 +7,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-white/50 backdrop-blur-xs;
-  backdrop-filter: blur(10px);
+  @apply fixed z-[9999] bg-white/50 backdrop-blur-xs;
 }
 
 /* hamburger menu */

@@ -5,14 +5,21 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active');
 });
 
-// navbar fixed
+// logo condition
 window.onscroll = function() {
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
+    const logoSmall = document.querySelector('#logo-small');
+    const logo = document.querySelector('#logo');
+    const scrollThreshold = 50;
 
-    if (window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed');
+    if (window.pageYOffset > scrollThreshold) {
+        // Tampilkan logo kecil dan sembunyikan logo besar
+        logoSmall.classList.remove('hidden');
+        logoSmall.classList.add('block');
+        logo.classList.add('hidden');
     } else {
-        header.classList.remove('navbar-fixed');
+        // Kembalikan ke kondisi awal jika scroll kembali ke atas
+        logoSmall.classList.remove('block');
+        logoSmall.classList.add('hidden');
+        logo.classList.remove('hidden');
     }
 }
