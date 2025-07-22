@@ -13,6 +13,14 @@
         /* --color-clifford: #da373d; */
       }
       @custom-variant dark (&:where(.dark, .dark *));
+      @extend {
+        .dark {
+          --color-primary: #14b8a6;
+          --color-secondary: #94a3b8;
+          --color-gray: #374151;
+          --color-teal: #14b8a6;
+        }
+      }
     </style>
 
     <link rel="stylesheet" href="./src/output.css"/>
@@ -292,9 +300,9 @@
         </section> -->
             
         <!-- Project Section -->
-        <section id="project">
+        <!-- <section id="project">
 
-            <!-- Project Categories -->
+            Project Categories
             <div class="project-head">
                 <h2>My Projects</h2>
                 <div>
@@ -305,13 +313,13 @@
                 </div>
             </div>
 
-            <!-- Project list -->
+            Project list
             <div class="project-list">
 
-                <!-- left side -->
+                left side
                 <div class="project-left">
-                    <!-- one project Contain
-                    year (top left), Name, Description, (tech & tools) -->
+                    one project Contain
+                    year (top left), Name, Description, (tech & tools)
                     <div class="project-card">
                         <img src="" alt="gambar project">
                         <h3>Nama Project</h3>
@@ -325,7 +333,7 @@
                     </div>
                 </div>
 
-                <!-- middle side -->
+                middle side
                 <div class="project-middle">
                     <div class="project-card">
                         <img src="" alt="gambar project">
@@ -340,7 +348,7 @@
                     </div>
                 </div>
 
-                <!-- right side -->
+                right side
                 <div class="project-right">
                     <div class="project-card">
                         <img src="" alt="gambar project">
@@ -354,6 +362,61 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section> -->
+
+        <section>
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+                <header class="text-center">
+                <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">My Projects</h2>
+                
+                <button class="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">
+                    Save Changes
+                </button>
+                <p class="mx-auto mt-4 py-4 max-w-md text-gray-500">
+                    All my projects are built with passion and dedication, showcasing my skills in Full Stack Software Engineering.
+                    Feel free to explore and reach out if you have any questions or feedback!
+                </p>
+                </header>
+
+                <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <a href="#" class="group relative block overflow-hidden shadow-lg">      
+
+                        <img
+                            src="https://images.unsplash.com/photo-1628202926206-c63a34b1618f?q=80&w=2574&auto=format&fit=crop"
+                            alt="Project Image 1"
+                            class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72 rounded-lg"
+                        />
+
+                        <div class="relative border border-teal-500 bg-white p-6">                        
+                            <h3 class="mt-1.5 text-lg font-bold text-gray-900">Wireless Headphones</h3>
+
+                            <p class="mt-1.5 line-clamp-3 text-gray-700">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis iure obcaecati pariatur.
+                            Officiis qui, enim cupiditate aliquam corporis iste.
+                            </p>
+
+                            <form class="mt-4 flex gap-4">
+                            <button
+                                type="button"
+                                class="block w-full rounded-sm bg-gray-500 px-4 py-3 text-sm font-medium text-gray-900 transition hover:scale-105"
+                            >
+                                Github
+                            </button>
+
+                            <button
+                                type="button"
+                                class="block w-full rounded-sm bg-gray-900 px-4 py-3 text-sm font-medium text-white transition hover:scale-105"
+                            >
+                                Preview
+                            </button>
+                            </form>
+                        </div>
+                    </a>
+                </li>
+
+                </ul>
             </div>
         </section>
 
