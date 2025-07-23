@@ -18,8 +18,10 @@ This project is a simple yet elegant personal landing page that serves as an onl
 ## Features
 
 - Responsive layout for desktop, tablet, and mobile
-- Fixed navigation bar with smooth and snap scroll
-- Section-based design: Home, About Me, Projects and Contact
+- Fixed navigation bar with smooth scroll
+- Hamburger menu containing each section
+- Transition logo on navigation bar when on scroll
+- Section-based design: Home, About, Projects and Contact
 - Email and social media icons (using Boxicons)
 - Minimalist, modern aesthetic with custom color palette
 - Scroll-friendly layout with clean structure
@@ -29,12 +31,15 @@ This project is a simple yet elegant personal landing page that serves as an onl
 
 - **HTML5** - semantic elements for structure
 - **CSS3** - for layout, animation, and responsiveness
-- **Boxicons** - for consistent icon design
+- **SVG Repo** - for consistent icon design
 - **Netlify** - for easy deployment and live hosting
+- **Github** - for easy deployment and live hosting
 - **Tailwind4** - utility-first CSS framework for styling and responsiveness
+- **Idwebhost** - for buying domain with cheap discounted price
+- **Cloudflare** - for relocate server name with more feature
 
 ## Link Page
-A clean and responsive personal landing page built with **HTML, CSS** -- showcasing my profile, projects, and contact info --.  
+A clean and responsive personal landing page built with **HTML, CSS, JS, Tailwind4** -- showcasing my profile, projects, and contact info --.  
 
 Live Demo 👉 [Click here](https://vermillion-strudel-d53a5e.netlify.app/)
 - https://vermillion-strudel-d53a5e.netlify.app/
