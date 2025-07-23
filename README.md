@@ -3,13 +3,13 @@
 # **Milnandy Personal Portofolio Website**
 
 ## Preview Home Page Dekstop
-![Preview-Dekstop](images/preview-dekstop.jpg)
+![Preview-Dekstop]()
 
 ## Preview About Me 768px
-![Preview-768px](images/preview-768px.jpg)
+![Preview-768px]()
 
 ## Preview Contact 480px
-![Preview-480px](images/preview-480px.jpg)
+![Preview-480px]()
 
 ## Overview
 
@@ -44,7 +44,7 @@ This project is a simple yet elegant personal landing page that serves as an onl
 ## Link Page
 A clean and responsive personal landing page built with **HTML, CSS, JS, Tailwind4** -- showcasing my profile, projects, and contact info --.  
 
-Live Demo 👉 [Click here](https://vermillion-strudel-d53a5e.netlify.app/)
+Live Demo 👉 [Click here](https://revou-fsse-jun25.github.io/milestone-1-Milnandy/)
 - https://vermillion-strudel-d53a5e.netlify.app/
 - https://milestone.milnandy.my.id/
 - https://revou-fsse-jun25.github.io/milestone-1-Milnandy/
