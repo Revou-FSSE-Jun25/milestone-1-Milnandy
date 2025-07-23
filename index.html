@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +10,21 @@
     <!-- tailwindcss custom -->
     <style type="text/tailwindcss">
       @theme {
-        /* --color-clifford: #da373d; */
-      }
-      @custom-variant dark (&:where(.dark, .dark *));
-      @extend {
-        .dark {
-          --color-primary: #14b8a6;
-          --color-secondary: #94a3b8;
-          --color-gray: #374151;
-          --color-teal: #14b8a6;
-        }
+        --color-primary: #14b8a6;
+        --color-secondary: #94a3b8;
+        --color-background: #f9fafb;
+        --color-text: #111827;
       }
     </style>
 
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyui themes -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="./src/output.css"/>
-    <!-- <link rel="stylesheet" href=""/> -->
     <title>Milnandy Portofolio</title>
 
     <!-- box icon -->
@@ -69,44 +69,36 @@
 
             <!-- Logo -->
             <a class="text-primary font-semibold block" href="#home" alt="logo" id="logo">Milnandy.</a>
-            <a class="text-primary font-medium hidden" href="#home" alt="logo" id="logo-small">MA.</a>
+            <a class="text-primary font-semibold hidden" href="#home" alt="logo" id="logo-small">MA.</a>
             </div>
 
             <div class="flex flex-1 items-center justify-end md:justify-between">
             <nav aria-label="Global" class="hidden md:block">
                 <ul class="flex items-center gap-6 text-sm">
                 <li>
-                    <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="#home"
-                    >
+                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#home">
                     Home
                     </a>
                 </li>
 
                 <li>
-                    <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="#about"
-                    >
+                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#about">
                     About
                     </a>
                 </li>
 
                 <li>
-                    <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="#project"
-                    >
+                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#project">
                     Project
                     </a>
                 </li>
 
                 <li>
-                    <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="#contact"
-                    >
+                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="#contact">
                     Contact
                     </a>
                 </li>
@@ -116,8 +108,7 @@
             <div class="flex items-center gap-4">
                 <label
                     for="AcceptConditions"
-                    class="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500 dark:bg-gray-600 dark:has-checked:bg-green-600"
-                    >
+                    class="relative block h-8 w-14 rounded-full bg-teal-500 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-gray-500 dark:bg-gray-600 dark:has-checked:bg-teal-600">
                     <input type="checkbox" id="AcceptConditions" class="peer sr-only" />
 
                     <span
@@ -125,22 +116,22 @@
                     ></span>
                 </label>
 
-                <button
-                class="block rounded-xs bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-                >
-                <span class="sr-only">Toggle menu</span>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="size-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                </button>
-            </div>
+                <div id="hamburger" class="dropdown dropdown-end md:hidden lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost rounded-field">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                        class="inline-block h-5 w-5 stroke-current"> 
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> 
+                        </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu dropdown-content bg-base-200 rounded-box z-1 mt-6 w-52 p-2 shadow-sm">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -535,14 +526,121 @@
                 </form>
             </div>
         </section> -->
-    
+
+        <section id="contact" class="pt-23">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+                    <div>
+                        <div class="max-w-lg md:max-w-none">
+                            <div class="">
+                                <img
+                                src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                                alt=""
+                                class="rounded-lg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <fieldset class="fieldset justify-self-center">                
+                        <legend class="fieldset-legend hidden">Contact Field</legend>
+
+                        <label class="input validator bg-slate-200">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                                stroke-width="2.5"
+                                fill="none"
+                                stroke="currentColor"
+                                >
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                                </g>
+                            </svg>
+                            <input
+                                type="text"
+                                required
+                                placeholder="Username"
+                                pattern="[A-Za-z][A-Za-z0-9\-]*"
+                                minlength="3"
+                                maxlength="30"
+                                title="Only letters, numbers or dash"
+                            />
+                        </label>
+                        <p class="validator-hint hidden mt-3">
+                        Must be 3 to 30 characters
+                        <br />containing only letters, numbers or dash
+                        </p>
+
+                        <label class="input validator bg-slate-200 mt-0">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                                stroke-width="2.5"
+                                fill="none"
+                                stroke="currentColor"
+                                >
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </g>
+                            </svg>
+                            <input type="email" placeholder="mail@site.com" required />
+                        </label>
+                        <div class="validator-hint hidden">Enter valid email address</div>
+
+                        <label class="input validator bg-slate-200">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">                                
+                                <g fill="currentColor" transform="translate(21.333333, 106.666667)">
+                                    <path d="M448,2.84217094e-14 L448,298.666667 L106.666667,298.666667 L3.55271368e-15,149.333333 L106.666667,2.84217094e-14 L448,2.84217094e-14 Z M405.333333,42.6666667 L128.597333,42.6666667 L52.416,149.333333 L128.618667,256 L405.333333,256 L405.333333,42.6666667 Z M138.666667,117.333333 C156.339779,117.333333 170.666667,131.660221 170.666667,149.333333 C170.666667,167.006445 156.339779,181.333333 138.666667,181.333333 C120.993555,181.333333 106.666667,167.006445 106.666667,149.333333 C106.666667,131.660221 120.993555,117.333333 138.666667,117.333333 Z M213.333333,170.666667 L362.666667,170.666667 L362.666667,213.333333 L213.333333,213.333333 L213.333333,170.666667 Z M213.333333,85.3333333 L362.666667,85.3333333 L362.666667,128 L213.333333,128 L213.333333,85.3333333 Z"></path>
+                                </g>
+                            </svg>
+                            <input
+                                type="text"
+                                required
+                                placeholder="Subject"
+                                pattern="[A-Za-z][A-Za-z0-9\-]*"
+                                minlength="3"
+                                maxlength="30"
+                                title="Only letters, numbers or dash"
+                            />
+                        </label>
+                        <p class="validator-hint hidden mt-3">
+                        Must be 3 to 30 characters
+                        <br />containing only letters, numbers or dash
+                        </p>
+
+                        <label class="relative block">                            
+                            <svg class="absolute top-3.5 left-3 h-[1em] opacity-50 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                                stroke-width="2.5"
+                                fill="none"
+                                stroke="currentColor"
+                                >
+                                    <path d="M7 9H17M7 13H17M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20Z"></path>
+                                </g>
+                            </svg>
+                            <textarea 
+                                class="textarea resize-none w-full bg-slate-200 placeholder:pl-8 placeholder:pr-4 placeholder:py-3" 
+                                placeholder="Message"
+                                rows="5"
+                            ></textarea>
+                        </label>
+                    </label>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
         
     </main>
-    <footer>
+    <!-- <footer>
         <h2>Get In Touch</h2>
         <p id="footer-text">Feel free to contact me if you have any question or just want to say hi</p>
         
-        <!-- Logo's email, github, instagram, linkedin-->
+        Logo's email, github, instagram, linkedin
         <div class="social-media">
             <ul>
                 <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkJlvpvnztDdVmkGQCsnpVkCwmbZNQlfBPhxTcHFlgZMhsWCWXNhBdMftDfFFhnFZxVbh"><i class='bx bxl-gmail' style='color:#d4a373'></i></a></li>
@@ -552,7 +650,8 @@
             </ul>
         </div>
         <p id="copyright">&copy; 2025 Milnandy. All rights reserved.</p>
-    </footer>
+    </footer> -->
+
     <script src="./js/main.js"></script>
 </body>
 </html>
