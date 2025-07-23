@@ -37,6 +37,9 @@ This project is a simple yet elegant personal landing page that serves as an onl
 - **Tailwind4** - utility-first CSS framework for styling and responsiveness
 - **Idwebhost** - for buying domain with cheap discounted price
 - **Cloudflare** - for relocate server name with more feature
+- **DaisyUI5** - tailwindv4 component
+- **HyperUI** - tailwindv4 component
+
 
 ## Link Page
 A clean and responsive personal landing page built with **HTML, CSS, JS, Tailwind4** -- showcasing my profile, projects, and contact info --.  
