@@ -36,6 +36,23 @@ This project is a simple yet elegant personal landing page that serves as an onl
 - **DaisyUI5** - tailwindv4 component and theme
 - **HyperUI** - tailwindv4 component
 
+## How to Use
+
+Input code below on HTML head
+
+```HTML
+<head>
+<!-- tailwindcss cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- daisyui cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- daisyui all theme -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+```
 
 ## Link Page
 A clean and responsive personal landing page built with **HTML, CSS, JS, Tailwind4** -- showcasing my profile, projects, and contact info --.  
