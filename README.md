@@ -63,6 +63,8 @@ Input code below on HTML head
 A clean and responsive personal landing page built with **HTML, CSS, JS, Tailwind4** -- showcasing my profile, projects, and contact info --.  
 
 Live Demo 👉 [Click here](https://revou-fsse-jun25.github.io/milestone-1-Milnandy/)
+or from my own repo :
+Live Demo 👉 [Click here](https://portofolio.milnandy.my.id/)
 
 For my previous portofolio :
 
