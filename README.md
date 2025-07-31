@@ -3,7 +3,7 @@
 # **Milnandy Personal Portofolio Website**
 
 ## Preview Home Page Dekstop
-![Preview-Dekstop](images/web_portofolio.png)
+![Preview-Dekstop](images/web_portofolio.webp)
 
 
 ## Overview
